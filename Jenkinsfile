@@ -1,8 +1,10 @@
 import groovy.sql.Sql
 
 pipeline {
-    agent any
-
+    agent {
+        label 'Node_agent_1'
+    }
+        
     stages {
         stage('Hello') {
             steps {
