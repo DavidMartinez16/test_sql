@@ -42,7 +42,7 @@ pipeline {
                     def sql = Sql.newInstance(dbConf.URL, dbConf.username, dbConf.password, dbConf.driver)
                     
                     //def results = sql.rows("select @@version")
-                    def results = sql.rows("wmic OS get FreePhysicalMemory")
+                    def results = sql.rows("EXEC xp_cmdshell 'wmic OS get FreePhysicalMemory'")
                     println results
                     
                     sql.close()
