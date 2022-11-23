@@ -23,7 +23,7 @@ pipeline {
                     def sql = Sql.newInstance(dbConf.URL, dbConf.username, dbConf.password, dbConf.driver)
                     
                     //def results = sql.rows("select @@version")
-                    def results = sql.rows("EXEC xp_cmdshell 'wmic cpu get loadpercentage'")
+                    def results = sql.rows("")
                     println results
                     
                     sql.close()
