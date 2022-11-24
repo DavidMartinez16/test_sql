@@ -125,5 +125,10 @@ pipeline {
                 }
             }
         }
+        stage('Bye') {
+            steps {
+                echo 'Bye World'
+            }
+        }
     }
 }
