@@ -13,7 +13,7 @@ pipeline {
         }
         stage('CPU') {
             steps {
-                echo 'Connecting to El Colombiano'
+                
                 script {
                     
                     // Define a Map with the credentials for the DB
@@ -32,7 +32,7 @@ pipeline {
         }
         stage('Memory') {
             steps {
-                echo 'Connecting to El Colombiano'
+                
                 script {
                    
                     // Define a Map with the credentials for the DB
@@ -51,7 +51,7 @@ pipeline {
         }
         stage('Virtual Memory') {
             steps {
-                echo 'Connecting to El Colombiano'
+                
                 script {
                    
                     // Define a Map with the credentials for the DB
@@ -70,7 +70,7 @@ pipeline {
         }
         stage('Cores') {
             steps {
-                echo 'Connecting to El Colombiano'
+                
                 script {
                    
                     // Define a Map with the credentials for the DB
@@ -89,7 +89,7 @@ pipeline {
         }
         stage('Filesystem') {
             steps {
-                echo 'Connecting to El Colombiano'
+                
                 script {
                    
                     // Define a Map with the credentials for the DB
@@ -108,7 +108,7 @@ pipeline {
         }
         stage('Caché') {
             steps {
-                echo 'Connecting to El Colombiano'
+                
                 script {
                    
                     // Define a Map with the credentials for the DB
